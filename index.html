@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>WebApp</title>
+</head>
+
+<body>
+    <div id="mobile-overlay" class="mobile-menu-overlay">
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/mobile-menu-exit.svg" alt="mobile open navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>
+
+
+                <ul class="secondary-nav">
+                    <a href="#contact"><li>Contact</li></a>
+                    <a href="#"><li class="primary-cta">Sign up</li></a>
+                </ul>
+
+            
+        </nav>
+    </div>
+
+        <div class="navbar">
+            <div class="container">
+                <img class="logo" src="images/logo_group.svg" alt="logo">
+                <nav>
+                    <div class="primary-nav">
+        
+                        <ul>
+                            <li class="current"><a href="#">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                        </ul>
+        
+                    </div>
+                    <div class="secondary-nav">
+                        <ul>
+                            <a href="#contact"><li>Contact</li></a>
+                            <a href="#"><li class="primary-cta">Sign up</li></a>
+                        </ul>
+                    </div>
+                    
+                </nav>
+                    
+                <img id="mobile-menu" class="mobile-hamburger" src="images/mobile-hamburger.png" alt="mobile open navigation">
+
+                
+            </div>
+            
+            
+
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="col-left">
+                    <h1>Get your work done</h1>
+                    <p>with this simple and powerful web app</p>
+                </div>
+                <div class="col-right">
+                    <img class="hero-sun" src="images/hero-Sun.svg" alt="good looking graphic">
+                    <img class="vector-table" src="images/table.svg" alt="table graphic">
+                    <img class="paper paper1" src="images/paper-vector.svg" alt="paper graphic">
+                    <img class="paper paper2" src="images/paper-vector.svg" alt="paper graphic">
+                    <img class="paper paper3" src="images/paper-vector.svg" alt="paper graphic">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="overlays">
+                <img class="o o1" src="images/overlay-shape.svg" alt="overlay image">
+                <img class="o o2" src="images/overlay-shape.svg" alt="overlay image">
+                <img class="o o3" src="images/overlay-shape.svg" alt="overlay image">
+            </div>
+            
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="col-left">
+                    <h1>Discover the features</h1>
+                    <img class="features-graphic" src="images/features_graphics.svg" alt="working gears">
+                </div>
+
+                <div class="col-right">
+                    <ul>
+                        <li>Has graphics</li>
+                        <li>Has text</li>
+                        <li>Has css</li>
+                        <li>Has html</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="form-col">
+                    <h1>Contact</h1>
+                    <form action="">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname">
+                        <label for="femail">E-mail</label>
+                        <input type="text" id="femail">
+                        <label for="fmessage">Message</label>
+                        <textarea name="fmessage" id="fmessage" cols="30" rows="10"></textarea>
+                        <input class="submit" type="submit" value="Send">
+                    </form>
+                </div>
+                <div class="col-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156389.09520356453!2d20.921111334332934!3d52.23285504212419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1626368370683!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                
+            </div>
+            <div class="copyright">
+                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!!!!!!!
+            </div>
+        </section>
+
+
+<script>
+
+    const hamburger = document.getElementById('mobile-menu');
+    const mobileexit = document.getElementById('mobile-exit');
+    const overlay = document.getElementById('mobile-overlay');
+
+    hamburger.addEventListener("click", () => {
+        overlay.style.width = "100%";
+    });
+    mobileexit.addEventListener("click", () => {
+        overlay.style.width = "0%";
+    });
+
+</script>
+
+</body>
+
+</html>
